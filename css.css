@@ -151,7 +151,18 @@ header h1,header p{
 .arr-side::before{
     background: var(--dark1) !important;
 }
-
+.paket a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 60px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white !important;
+    border-radius: 4px;
+    background: rgb(53, 209, 53);
+}
 .scroll-warp{
     top: 85%;
     position: absolute;
