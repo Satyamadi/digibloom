@@ -39,11 +39,12 @@ p,h1,h2{
 nav{
     width: 100%;
     position: fixed;
-    background: #161616;
+    background: #ffffff;
     height: 100px;
     display: flex;
-    color: white;
+    color: rgb(0, 0, 0);
     z-index: 99;
+    overflow: hidden;
     pointer-events: none;
     /* letter-spacing: 1px; */
     flex-direction: row;
@@ -67,14 +68,17 @@ nav ul{
     text-decoration: none;
     cursor: pointer;
     font-size: 0.9rem;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .logo-nav{
     width: 210px;
 }
+.logo-nav img{
+    width: 140px;
+}
 .lists li a:hover{
     transition: 0.3s;
-    color: var(--accent);
+    color: rgb(36, 36, 36);
     box-shadow: 0 1px 0 0 var(--accent);
 }
 .circle {
@@ -237,7 +241,7 @@ header h1,header p{
 }
 .about-text p{
     margin-top: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align:left;
     /* word-break: break-all; */
 }
@@ -555,7 +559,7 @@ header h1,header p{
 }
 .p-price p{
     color: white !important;
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 1rem 0;
 }
 .pack-wrap .pad-paket:nth-child(3) .p-price p,.pack-wrap .pad-paket:nth-child(3),.pack-wrap .pad-paket:nth-child(3) h1 ,.pack-wrap .pad-paket:nth-child(3) p.p-desc{
@@ -589,20 +593,7 @@ footer{
     transition: 0.3s ease-in-out 0.5s;
     font-weight: 700;
 }
-.cc1 h1::after{
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 0px;
-    background: white;
-    margin-top: 50px;
-    transition: 0.5s ease-in-out;
-    margin-left: -460px;
-}
-.cc1:hover h1::after{
-    width: 460px;
-    transition: 0.5s ease-in-out;
-}
+
 /* .cc2 h1::after{
     content: "";
     position: absolute;
@@ -644,7 +635,7 @@ footer{
 .nav-bottom{
     width: 100%;
     height: 80px;
-    background: var(--dark1);
+    background: #087689;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -710,7 +701,7 @@ footer{
     position: absolute;
     height: 2px;
     width: 28px;
-    background-color: white;
+    background-color: black;
     
 }
 .hamburger span:nth-child(1){
@@ -755,7 +746,7 @@ footer{
     height: 100%;
     justify-content: center;
     align-items: center;
-    background: #1a1a1a;
+    background: #ffffff;
     z-index: 2;
     transition: left 0.5s ease-in 0.5s;
 
